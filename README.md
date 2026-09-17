@@ -14,9 +14,13 @@ Turn a script, scene, or ad brief into a practical shot list and one to four sto
 | **Cost** | Free to install. Each render uses credits on your Beatra account, and paid steps run only when you ask for that exact render or approve its card. |
 | **Works with** | Claude Code, Codex, OpenClaw |
 
+<p align="center"><img src="assets/hero.webp" width="800" alt="A four-shot storyboard for a 15-second ad for a fictional commuter e-bike, Voltline, going from a rainy morning wide shot to a sunrise ride past traffic, with the same rider and bike in every frame. AI-generated with Beatra."></p>
+
+*A four-shot storyboard for a 15-second ad for a fictional commuter e-bike, Voltline, going from a rainy morning wide shot to a sunrise ride past traffic, with the same rider and bike in every frame. AI-generated with Beatra.*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-storyboard-generator`](skills/ai-storyboard-generator) | [SKILL.md](skills/ai-storyboard-generator/SKILL.md) | 0.1.6 |
+| [`ai-storyboard-generator`](skills/ai-storyboard-generator) | [SKILL.md](skills/ai-storyboard-generator/SKILL.md) | 0.1.7 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-storyboard-generator). Report issues there.
 

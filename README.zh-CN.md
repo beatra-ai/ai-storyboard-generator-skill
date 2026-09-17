@@ -14,9 +14,13 @@
 | **费用** | 安装免费。每次生成消耗 Beatra 账号积分，只有你明确要求这次生成或批准确认卡后才会付费。 |
 | **支持的 Agent** | Claude Code、Codex、OpenClaw |
 
+<p align="center"><img src="assets/hero.webp" width="800" alt="为虚构通勤电助力自行车 Voltline 制作的 15 秒广告四镜头分镜，从雨天清晨的大全景到日出时骑车穿过车流，每一格都是同一位骑手和同一辆车。由 Beatra AI 生成。"></p>
+
+*为虚构通勤电助力自行车 Voltline 制作的 15 秒广告四镜头分镜，从雨天清晨的大全景到日出时骑车穿过车流，每一格都是同一位骑手和同一辆车。由 Beatra AI 生成。*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-storyboard-generator`](skills/ai-storyboard-generator) | [SKILL.md](skills/ai-storyboard-generator/SKILL.md) | 0.1.6 |
+| [`ai-storyboard-generator`](skills/ai-storyboard-generator) | [SKILL.md](skills/ai-storyboard-generator/SKILL.md) | 0.1.7 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-storyboard-generator) 自动发布，问题请到那里反馈。
 
