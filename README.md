@@ -1,6 +1,8 @@
 # AI Storyboard Generator Skill
 
-English | [简体中文](./README.zh-CN.md)
+English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
+
+> 👉 See also [Viral Video Remake Skill](https://github.com/beatra-ai/viral-video-remake-skill)
 
 Turn a script, scene, or ad brief into a practical shot list and one to four storyboard key-frame images, from inside Claude Code, Cursor, Codex, Windsurf, Cline, or OpenClaw.
 

@@ -1,6 +1,8 @@
 # AI Storyboard Generator Skill
 
-[English](./README.md) | 简体中文
+[English](./README.md) | 简体中文 | [日本語](./README.ja.md)
+
+> 👉 也看看 [Viral Video Remake Skill](https://github.com/beatra-ai/viral-video-remake-skill)
 
 把剧本、场景或广告创意说明拆成可执行的分镜表，并制作一至四张关键分镜图，在 Claude Code、Cursor、Codex、Windsurf、Cline 或 OpenClaw 里直接完成。
 
