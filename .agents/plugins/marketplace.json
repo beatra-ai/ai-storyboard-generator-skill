@@ -1,0 +1,20 @@
+{
+  "name": "ai-storyboard-generator-skill",
+  "interface": {
+    "displayName": "AI Storyboard Generator"
+  },
+  "plugins": [
+    {
+      "name": "ai-storyboard-generator",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    }
+  ]
+}

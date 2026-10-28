@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "ai-storyboard-generator-skill",
+  "description": "The Beatra AI Storyboard Generator skill as a Claude Code plugin.",
+  "owner": {
+    "name": "Beatra AI",
+    "url": "https://github.com/beatra-ai"
+  },
+  "plugins": [
+    {
+      "name": "ai-storyboard-generator",
+      "source": "./",
+      "description": "Turn a script, scene, or ad brief into a practical shot list and one to four storyboard key-frame images."
+    }
+  ]
+}

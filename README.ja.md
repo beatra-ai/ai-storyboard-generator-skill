@@ -35,6 +35,33 @@
 npx skills add beatra-ai/ai-storyboard-generator-skill
 ```
 
+Claude Code プラグインとして：
+
+```bash
+claude plugin marketplace add beatra-ai/ai-storyboard-generator-skill
+claude plugin install ai-storyboard-generator@ai-storyboard-generator-skill
+```
+
+Codex プラグインとして：
+
+```bash
+codex plugin marketplace add beatra-ai/ai-storyboard-generator-skill
+codex plugin add ai-storyboard-generator@ai-storyboard-generator-skill
+```
+
+GitHub Copilot CLI プラグインとして：
+
+```bash
+copilot plugin marketplace add beatra-ai/ai-storyboard-generator-skill
+copilot plugin install ai-storyboard-generator@ai-storyboard-generator-skill
+```
+
+Gemini CLI 拡張機能として：
+
+```bash
+gemini extensions install https://github.com/beatra-ai/ai-storyboard-generator-skill
+```
+
 GitHub CLI を使う場合：
 
 ```bash
