@@ -62,6 +62,12 @@ copilot plugin install ai-storyboard-generator@ai-storyboard-generator-skill
 gemini extensions install https://github.com/beatra-ai/ai-storyboard-generator-skill
 ```
 
+作为 Antigravity CLI 插件：
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-storyboard-generator-skill
+```
+
 使用 GitHub CLI：
 
 ```bash
@@ -75,6 +81,15 @@ gh skill install beatra-ai/ai-storyboard-generator-skill ai-storyboard-generator
 ```text
 从 https://github.com/beatra-ai/ai-storyboard-generator-skill 安装 ai-storyboard-generator skill（目录 skills/ai-storyboard-generator），然后按它的 SKILL.md 连接我的 Beatra 账号。
 ```
+
+## 输入与输出
+
+| | 类型 | 格式 | 规格 |
+| --- | --- | --- | --- |
+| **输入** | 文本：剧本、场景或广告创意 | — | — |
+| **输入** | 图片：角色或场景参考图（可选） | JPG、PNG、WEBP | — |
+| **输出** | 文本：含景别、机位、动作、时长、台词和声音的分镜表 | — | 可编辑 |
+| **输出** | 图片：关键分镜图 | PNG | 单次最多 4 张 |
 
 ## 技术规格与输出限制
 
@@ -112,17 +127,17 @@ gh skill install beatra-ai/ai-storyboard-generator-skill ai-storyboard-generator
 
 ## 常见问题
 
-### 必须提供完整剧本吗？
+### 开始需要准备什么？
 
-不需要。场景大纲、广告创意说明或故事概念也可以，只要包含核心动作、目标受众和预期形式。
+剧本、场景大纲、广告创意说明或故事概念都可以，写清核心动作、目标受众和预期形式即可。
 
 ### 可以制作多少张分镜图？
 
-流程会先规划完整镜头表，再为选定的一至四个关键镜头分别制作分镜图。
+一至四张。完整的分镜表之外，会为一至四个关键镜头分别画出分镜图。
 
 ### 可以使用角色或场景参考图吗？
 
-可以。请按顺序提供并说明每张参考图的用途，便于关键帧延续预期的视觉方向。
+可以。按顺序提供并说明每张参考图的用途，关键分镜图就照着它们来画。
 
 ## 更新与安全
 
@@ -132,7 +147,9 @@ gh skill install beatra-ai/ai-storyboard-generator-skill ai-storyboard-generator
 
 ## 许可证
 
-[MIT-0](LICENSE)：可自由使用、修改和再分发，包括商用，无需署名；与这些 skill 在 ClawHub 上的条款一致。
+本仓库的 Skill 文件（`SKILL.md`、参考文档和脚本）与本 README 采用 [MIT-0](LICENSE) 许可：可自由使用、修改和再分发，包括商用，无需署名。
+
+内容生成在 Beatra 云端完成，适用 [Beatra 服务条款](https://www.beatra.cn/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-storyboard-generator-skill)。
 
 ## 相关链接
 

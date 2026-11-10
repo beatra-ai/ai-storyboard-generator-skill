@@ -62,6 +62,12 @@ As a Gemini CLI extension:
 gemini extensions install https://github.com/beatra-ai/ai-storyboard-generator-skill
 ```
 
+As an Antigravity CLI plugin:
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-storyboard-generator-skill
+```
+
 With the GitHub CLI:
 
 ```bash
@@ -77,6 +83,15 @@ Or paste this into your agent:
 ```text
 Install the ai-storyboard-generator skill from https://github.com/beatra-ai/ai-storyboard-generator-skill (folder skills/ai-storyboard-generator), then follow its SKILL.md to connect my Beatra account.
 ```
+
+## Inputs and outputs
+
+| | Type | Formats | Specifications |
+| --- | --- | --- | --- |
+| **Input** | Text — Script, scene, or ad brief | — | — |
+| **Input** | Image — Character or location references (optional) | JPG, PNG, WEBP | — |
+| **Output** | Text — Shot list with shot type, camera, action, timing, dialogue, and sound | — | editable |
+| **Output** | Image — Storyboard key frames | PNG | up to 4 images per request |
 
 ## Technical Specifications & Output Limits
 
@@ -114,17 +129,17 @@ As of 2026-10-18. Live list: https://docs.beatra.ai/en/docs/models
 
 ## FAQ
 
-### Do I need a finished screenplay?
+### What do I need to start?
 
-A scene outline, advertising brief, or story concept is enough when it includes the core action, audience, and intended format.
+A script, scene outline, ad brief, or story concept that includes the core action, audience, and intended format.
 
 ### How many storyboard images can I create?
 
-The workflow plans the full shot list, then creates one to four selected key frames as individual storyboard images.
+One to four key frames, drawn as individual storyboard images alongside the full shot list.
 
 ### Can I use character or location references?
 
-Yes. Provide them in a clear order and name the role of each reference so the selected frame preserves the intended visual direction.
+Yes. Provide them in a clear order and say what each one is for; the key frames are drawn from them.
 
 ## Updates and security
 
@@ -135,9 +150,10 @@ Details: `references/updates-and-security.md` inside the skill.
 
 ## License
 
-[MIT-0](LICENSE) — free to use, modify, and redistribute, including
-commercially. No attribution required. Same terms as these skills carry on
-ClawHub.
+The skill files in this repository (`SKILL.md`, references, and scripts) and this README are licensed under
+[MIT-0](LICENSE): free to use, modify, and redistribute, including commercially, with no attribution required.
+
+Media generation runs on Beatra's cloud service under the [Beatra Terms of Service](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-storyboard-generator-skill).
 
 ## Links
 

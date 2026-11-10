@@ -62,6 +62,12 @@ Gemini CLI 拡張機能として：
 gemini extensions install https://github.com/beatra-ai/ai-storyboard-generator-skill
 ```
 
+Antigravity CLI プラグインとして：
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-storyboard-generator-skill
+```
+
 GitHub CLI を使う場合：
 
 ```bash
@@ -75,6 +81,15 @@ gh skill install beatra-ai/ai-storyboard-generator-skill ai-storyboard-generator
 ```text
 https://github.com/beatra-ai/ai-storyboard-generator-skill から ai-storyboard-generator スキル（フォルダ skills/ai-storyboard-generator）をインストールし、その SKILL.md に従って私の Beatra アカウントに接続してください。
 ```
+
+## 入力と出力
+
+| | 種類 | 形式 | 仕様 |
+| --- | --- | --- | --- |
+| **入力** | テキスト：台本、シーン、広告ブリーフ | — | — |
+| **入力** | 画像：キャラクターやロケーションの参考画像（任意） | JPG、PNG、WEBP | — |
+| **出力** | テキスト：画角、カメラ、アクション、尺、セリフ、音を整理したショットリスト | — | 編集可能 |
+| **出力** | 画像：キーフレーム画像 | PNG | 1 リクエストあたり最大 4 枚 |
 
 ## 技術仕様と出力上限
 
@@ -103,17 +118,17 @@ https://github.com/beatra-ai/ai-storyboard-generator-skill から ai-storyboard-
 
 ## よくある質問
 
-### 完成した脚本が必要ですか？
+### 始めるには何が必要ですか？
 
-主要な動き、対象視聴者、想定形式が分かれば、シーン概要や広告ブリーフから始められます。
+台本、シーン概要、広告ブリーフ、ストーリーの構想のいずれかで、主要な動き、対象視聴者、想定形式が分かれば始められます。
 
 ### 絵コンテ画像は何枚作れますか？
 
-全体のショットリストを設計した後、選択した1〜4カットを個別のキーフレームとして作成します。
+1〜4枚です。ショットリスト全体に加えて、1〜4カットのキーフレームを個別の画像で作ります。
 
 ### キャラクターやロケーションの参考画像は使えますか？
 
-はい。各画像の役割と順序を明確にすると、選択したフレームに意図した視覚方向を反映できます。
+はい。各画像の役割と順序を伝えると、キーフレームはその参考画像をもとに描きます。
 
 ## 更新とセキュリティ
 
@@ -123,7 +138,9 @@ https://github.com/beatra-ai/ai-storyboard-generator-skill から ai-storyboard-
 
 ## ライセンス
 
-[MIT-0](LICENSE)：商用を含め、自由に使用・改変・再配布できます。クレジット表記は不要です。ClawHub 上のこれらのスキルと同じ条件です。
+このリポジトリのスキルファイル（`SKILL.md`、リファレンス、スクリプト）とこの README は [MIT-0](LICENSE) で提供しています。商用を含め、自由に使用・改変・再配布でき、クレジット表記は不要です。
+
+生成は Beatra のクラウドサービスで行われ、[Beatra 利用規約](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-storyboard-generator-skill)が適用されます。
 
 ## リンク
 
