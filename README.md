@@ -12,7 +12,7 @@ Turn a script, scene, or ad brief into a practical shot list and one to four sto
 | Question | Answer |
 | --- | --- |
 | **What it does** | Turn a script, scene, or ad brief into a practical shot list and one to four storyboard key-frame images. |
-| **Models** | Qwen Image 2.0 Fast, Qwen Image 3.0, Qwen Image 3.0 Pro, GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2, Wan Image 2.7 Fast, Qwen Image 2.0 Pro, Wan Image 2.7 Pro, MiniMax Image 01 Live |
+| **Models** | Qwen Image 3.0, MiniMax H3 Image, Qwen Image 2.0 Fast, Qwen Image 3.0 Pro, GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2, Wan Image 2.7 Fast, Qwen Image 2.0 Pro, Wan Image 2.7 Pro |
 | **Requirements** | Python 3.10+ and an agent that loads `SKILL.md` |
 | **Cost** | Free to install. Each render uses credits on your Beatra account, and paid steps run only when you ask for that exact render or approve its card. |
 | **Works with** | Claude Code, Cursor, Codex, Windsurf, Cline, OpenClaw |
@@ -84,6 +84,8 @@ Or paste this into your agent:
 Install the ai-storyboard-generator skill from https://github.com/beatra-ai/ai-storyboard-generator-skill (folder skills/ai-storyboard-generator), then follow its SKILL.md to connect my Beatra account.
 ```
 
+Tested in clean-room CI: Antigravity CLI (2026-11-09).
+
 ## Inputs and outputs
 
 | | Type | Formats | Specifications |
@@ -95,21 +97,21 @@ Install the ai-storyboard-generator skill from https://github.com/beatra-ai/ai-s
 
 ## Technical Specifications & Output Limits
 
-As of 2026-10-18. Live list: https://docs.beatra.ai/en/docs/models
+As of 2026-11-14. Live list: https://docs.beatra.ai/en/docs/models
 
 - **Uploads** — up to 100 MB per file; the per-model input limits below also apply
-- **Text to image** — 10 models (Qwen Image 2.0 Fast, Qwen Image 3.0, Qwen Image 3.0 Pro, GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2, Wan Image 2.7 Fast, Qwen Image 2.0 Pro, Wan Image 2.7 Pro, MiniMax Image 01 Live); PNG; up to 4 images per request; canvas up to 16.8 MP
-  - 16.8 MP (4K tier): Wan Image 2.7 Pro (up to 4 images per request); GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2 (1 image per request)
-- **Image to image** — 10 models (Qwen Image 2.0 Fast, Qwen Image 3.0, Qwen Image 3.0 Pro, Wan Image 2.7 Fast, Qwen Image 2.0 Pro, Wan Image 2.7 Pro, GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2, MiniMax Image 01 Live); PNG; up to 4 images per request; canvas up to 16.8 MP
-  - 16.8 MP (4K tier): GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2 (1 image per request)
+- **Text to image** — 10 models (Qwen Image 3.0, MiniMax H3 Image, Qwen Image 2.0 Fast, Qwen Image 3.0 Pro, GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2, Wan Image 2.7 Fast, Qwen Image 2.0 Pro, Wan Image 2.7 Pro); PNG; up to 4 images per request; canvas up to 16.8 MP
+  - 16.8 MP (4K tier): MiniMax H3 Image, Wan Image 2.7 Pro (up to 4 images per request); GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2 (1 image per request)
+- **Image to image** — 10 models (Qwen Image 2.0 Fast, MiniMax H3 Image, Qwen Image 3.0, Qwen Image 3.0 Pro, Wan Image 2.7 Fast, Qwen Image 2.0 Pro, Wan Image 2.7 Pro, GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2); PNG; up to 4 images per request; canvas up to 16.8 MP
+  - 16.8 MP (4K tier): MiniMax H3 Image (up to 4 images per request); GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2 (1 image per request)
   - Input images: up to 4 per request, 10–20 MB each; BMP, GIF, JPEG, PNG, TIFF, WEBP
-- **Image editing** — 6 models (Qwen Image 2.0 Fast, Qwen Image 3.0, Qwen Image 3.0 Pro, Wan Image 2.7 Fast, Qwen Image 2.0 Pro, Wan Image 2.7 Pro); PNG; up to 4 images per request; canvas up to 4.2 MP
-  - 4.2 MP (2K tier): Qwen Image 2.0 Fast, Qwen Image 3.0, Qwen Image 3.0 Pro, Wan Image 2.7 Fast, Qwen Image 2.0 Pro, Wan Image 2.7 Pro (up to 4 images per request)
+- **Image editing** — 7 models (Qwen Image 2.0 Fast, MiniMax H3 Image, Qwen Image 3.0, Qwen Image 3.0 Pro, Wan Image 2.7 Fast, Qwen Image 2.0 Pro, Wan Image 2.7 Pro); PNG; up to 4 images per request; canvas up to 16.8 MP
+  - 16.8 MP (4K tier): MiniMax H3 Image (up to 4 images per request)
   - Input images: up to 4 per request, 10–20 MB each; BMP, GIF, JPEG, PNG, TIFF, WEBP
 
 ## Why use Beatra instead of calling model APIs directly
 
-- **One account for every model this skill uses** — Text to image 10; Image to image 10; Image editing 6 (Qwen Image 2.0 Fast, Qwen Image 3.0, Qwen Image 3.0 Pro, GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2, Wan Image 2.7 Fast, Qwen Image 2.0 Pro, Wan Image 2.7 Pro, MiniMax Image 01 Live) (as of 2026-10-18), behind one Beatra sign-in; no keys from individual model providers to manage.
+- **One account for every model this skill uses** — Text to image 10; Image to image 10; Image editing 7 (Qwen Image 3.0, MiniMax H3 Image, Qwen Image 2.0 Fast, Qwen Image 3.0 Pro, GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2, Wan Image 2.7 Fast, Qwen Image 2.0 Pro, Wan Image 2.7 Pro) (as of 2026-11-14), behind one Beatra sign-in; no keys from individual model providers to manage.
 - **You decide what gets paid for** — Paid renders run only when you ask for that exact render or approve its card, which shows the live credit estimate.
 - **Direction before rendering** — the skill plans, directs, and reviews the work, then renders it on Beatra.
 - **Files you can verify** — every file under `skills/` matches the release archive on cdn.beatra.ai byte for byte, checked by SHA-256 before each push.
@@ -157,6 +159,7 @@ Media generation runs on Beatra's cloud service under the [Beatra Terms of Servi
 
 ## Links
 
+- Skill page — https://beatra.ai/skills/ai-storyboard-generator?utm_source=github&utm_medium=flagship&utm_campaign=ai-storyboard-generator-skill
 - Website — https://beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=ai-storyboard-generator-skill
 - Docs — https://docs.beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=ai-storyboard-generator-skill
 - Console — https://console.beatra.ai
